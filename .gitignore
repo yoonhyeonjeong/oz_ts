@@ -1,7 +1,22 @@
 # Node.js 관련
 node_modules/         # 의존성 파일 폴더
 npm-debug.log*        # npm 디버그 로그
+yarn-debug.log*       # yarn 디버그 로그
+yarn-error.log*       # yarn 에러 로그
 package-lock.json     # (선택적으로 무시 가능)
 
 # TypeScript 관련
+*.tsbuildinfo         # TypeScript 빌드 정보 캐시 파일
 dist/                 # 컴파일된 JavaScript 파일 저장 폴더
+out/                  # outDir 설정 시 지정한 폴더
+
+# 환경 파일
+.env                  # 환경 변수 파일
+
+# OS 및 편집기 관련
+.DS_Store             # macOS 시스템 파일
+Thumbs.db             # Windows 썸네일 데이터
+*.swp                 # Vim swap 파일
+.idea/                # IntelliJ IDEA 프로젝트 폴더
+.vscode/              # VS Code 설정 파일
+*.log                 # 로그 파일
