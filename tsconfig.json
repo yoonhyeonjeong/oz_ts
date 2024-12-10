@@ -6,8 +6,11 @@
         "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
         "strict": true /* Enable all strict type-checking options. */,
         "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-        "outDir": "dist",
-        "noUncheckedIndexedAccess": true
+        "outDir": "./dist", // 컴파일 결과물이 저장될 폴더
+        "rootDir": "./src", // TypeScript 소스 파일이
+        "noUncheckedIndexedAccess": true,
+        "strictNullChecks": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"], // 컴파일할 파일 경로 설정
+    "exclude": ["node_modules"] // 제외할 파일/폴더
 }
